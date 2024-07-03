@@ -32,10 +32,10 @@ body {
 
 :root {
     --accent-color: #F76544;
-    --dark-color: #404119;
+    --dark-color: #404149;
     --gray-color: #999;
     --white-color: #fff;
-    --background-color: e5e5e5;
+    --background-color: #e5e5e5;
 }
 
 .text-h2 {
@@ -258,12 +258,13 @@ body {
 .project-h3 {
     color: var(--dark-color);
    /* margin-bottom: 20px;*/
-   margin-bottom: 0;
+    margin-bottom: 13px;
     text-transform: none;
 }
 
 .project-p {
     color: var(--gray-color);
+    margin-top: 0;
 }
 
 
@@ -400,7 +401,7 @@ body {
     width: 350px;
 }
 .services__icon {
-    margin: 0 auto 21px;
+    margin: 0 auto 22px;
 }
 
 
@@ -464,7 +465,7 @@ body {
 
 .question {
     padding-top: 150px;
-    padding-bottom: 110px;
+    padding-bottom: 115px;
 }
 .text-h2 {
 }
@@ -486,13 +487,17 @@ body {
 
 
 .question_p {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     color: var(--gray-color);
     max-width: 730px;
 }
 
 .question_h3.close {
     margin-bottom: 31px;
+}
+
+.question_h3.open {
+    margin-bottom: 25px;
 }
 
 .question_h3.open::before, 
@@ -504,7 +509,7 @@ body {
     background-image: url(../img/Arrow.svg);
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 14px;
+    margin-right: 11px;
 }
 
 .question_h3.open::before {
@@ -521,10 +526,205 @@ body {
    }
 }
 
+.partners {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--dark-color);
+}
+
+.partners__h2 {
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.partners__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partners_item {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 170px;
+
+}
+
+.partners_item:nth-child(5) {
+    margin-right: 0;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .partners__flex {
+        justify-content: center;
+    }
+
+
+    .partners__item {
+        margin-right: 10px;
+        margin-left: 10px;
+     }
+
+    .partners_item:nth-child(5) {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
 
 
 
 
 
+.reviews {
+     padding: 150px 0 142px;
+}
+
+.reviews__h2 {
+    text-align: center;
+    margin-bottom: 65px;
+}
+.reviews__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.reviews__grid-item {
+
+}
+.reviews__card {
+    background-color: #f7f7f7;
+    padding: 23px 30px 20px;
+    margin-bottom: 33px;
+}
+.reviews_quotes {
+    font-size: 100px;
+    color: var(--accent-color);
+    line-height: 1;
+    margin-bottom: -60px;
+}
+
+.reviews__author-accent {
+    color: var(--accent-color);
+}
+
+.reviews .text-h4 {
+    text-transform: none;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .reviews {
+        padding: 100px 15px;
+    }
+
+    .reviews__grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .reviews__grid {
+        grid-template-columns: repeat(1, 1fr)
+    }
+} 
+
+.contacts {
+    padding: 100px 0 150px;
+}
+
+
+.contacts__h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contacts__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contacts__item {
+    max-width: 255px;
+    text-align: center;
+}
+
+.contacts__icon {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 13px;
+}
+
+.contacts__h3 {
+    text-transform: uppercase;
+}
+.contacts__h3-gray {
+    color: var(--gray-color);
+    margin-bottom: 18px;
+    
+}
+
+.contacts__h3-accent {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 1280px) {
+
+    .contacts__grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .contacts__item {
+    max-width: 100%;
+    text-align: center;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .contacts__grid {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+}
+
+
+.footer {
+    padding: 15px 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+
+.footer__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+
+}
+
+.footer__brand {
+
+}
+
+@media screen and (max-width: 1280px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .footer__flex {
+        flex-direction: column;
+    }
+}
 
 
