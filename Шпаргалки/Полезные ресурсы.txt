@@ -1,0 +1,5 @@
+https://habr.com/ru/articles/477520/ элемент для скрытия/открытия текста
+https://caniuse.com/ Сайт для проверки поддержки браузерами HTML тегов и CSS свойств
+Materialize CSS уроки для начинающих https://www.youtube.com/playlist?list=PLuY6eeDuleINySQR63hZJDR4qdvcK__PZ
+Materialize - как бутстрап, имеет код javascript (дял менюшек, модальных окон и тд)
+Ссылки разных типов для мобильных устройств sms tel mailto - https://www.youtube.com/watch?v=-De3aga_BiI

@@ -1,0 +1,50 @@
+git init - инициализация репозитория
+git add . (git add "file") добавление изменений( индексация файла в рабочей области)
+git status - статус файлов
+git commit -m "коммент" - Зафиксировать запись (запись индексированных изменений в репозиторий Git)
+git push - залить на сервер
+
+
+git pull - загрузка файлов из репозитория
+git git checkout --файл   - отмена изменений в файле
+git git checkout .        - отмена изменений во всех файлах
+
+
+
+					Удаление изменений
+
+Если требуется удалить изменения из файла, которые были добавлены в коммит коммандой git add . :
+git reset файл
+git git checkout --файл
+
+
+В случае, когда требуется отменинить изменений у индексированного файла с записью изменений в репозиторй:
+git reset --hard HEAD^1 - вернуть изменения на один комит раньее
+git reset --soft HEAD^1 - вернуть изменения на один комит раньее и не удалять из файла
+
+					Слияние веток 
+git merge файл - для слияния, необходимо находится в главной ветке  и из терминала написать команду слияния с определнной веткой
+
+
+GitHub Gist - для того, чтобы Создавать фрагменты кода для повторного использования
+
+
+В случае ошибки при git push -u origin main:
+[rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Эти шаги помогли мне устранить эту ошибку:
+
+$ git fetch origin main:tmp 
+
+$ git rebase tmp
+
+//Successfully rebased and updated refs/heads/main.
+
+$ git push --set-upstream origin main
+
+$ git push
